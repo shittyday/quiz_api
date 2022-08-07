@@ -1,3 +1,7 @@
+/*
+  Common unit whit common types
+*/
+
 import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:quizapi/model/quiz_model.dart';
@@ -63,21 +67,16 @@ class Result {
 
 class GameResult {
   GameResult(
-      {required this.quizes,
-      required this.category,
-      required this.difficulty,
-      this.count = 0});
+      {required this.quizes, required this.category, required this.difficulty});
   final Map<QuizModel, Result> quizes;
   Category category;
   Difficulty difficulty;
-  int count;
 
   GameResult copyWith(
       {Map<QuizModel, Result>? quizes,
       Category? category,
       Difficulty? difficulty}) {
     return GameResult(
-        count: count,
         quizes: quizes ?? this.quizes,
         category: category ?? this.category,
         difficulty: difficulty ?? this.difficulty);

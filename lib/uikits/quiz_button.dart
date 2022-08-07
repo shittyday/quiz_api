@@ -52,7 +52,13 @@ class _QuizButtonState extends State<QuizButton> {
                           .correctAnswer;
                       enabled = false;
                     });
-                    if (ResultInherited.of(context).gameResult.count - 1 ==
+
+                    /// if count of answers == count of pages then we can push to the next page [End]
+                    ///
+                    /// because count of answers can be less then 10
+                    ///
+                    if (ResultInherited.of(context).gameResult.quizes.length -
+                            1 ==
                         widget.controller.page!.toInt()) {
                       enabled = false;
                       Future.delayed(
@@ -105,6 +111,12 @@ class _QuizButtonState extends State<QuizButton> {
                 }
               }
             : null,
+
+        /// if correct == null then defualt button
+        ///
+        /// if incorrect then error button
+        ///
+        /// if correct then success button
         child: correct == null
             ? ButtonDefaultAtom(
                 color: AppColors.grey, id: widget.idAnswer, text: widget.text)

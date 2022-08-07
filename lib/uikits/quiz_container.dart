@@ -14,7 +14,8 @@ class QuizContainer extends StatelessWidget {
     return Align(
         alignment: Alignment.center,
         child: SingleChildScrollView(
-            physics: const ClampingScrollPhysics(),
+            physics:
+                const ClampingScrollPhysics(), // we scrolling pages when need it
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

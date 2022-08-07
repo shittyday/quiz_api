@@ -65,7 +65,6 @@ class _QuizState extends State<Quiz> {
   }
 
   void _fillInheritedWidget() {
-    ResultInherited.of(context).gameResult.count = quizes.length;
     for (var element in quizes) {
       ResultInherited.of(context).gameResult.quizes[element] =
           Result(count: _countCorrect(element), result: {});
