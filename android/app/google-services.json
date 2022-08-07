@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "821982076742",
+    "project_id": "quizapi-949ae",
+    "storage_bucket": "quizapi-949ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821982076742:android:8607308f5b24f50d564f47",
+        "android_client_info": {
+          "package_name": "com.example.quizapi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821982076742-ut1ft5esgqt3gdodsc8ngj9nr22tvqjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd_dfetoLVuN54AAHfwEzAckOiIQHGS8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821982076742-ut1ft5esgqt3gdodsc8ngj9nr22tvqjp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "821982076742-6m4993hr9dco7gjidtutghgidu0fnucr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.quizapi"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
