@@ -20,23 +20,3 @@ class AppSnackBar extends SnackBar {
     ));
   }
 }
-
-/*class AppSnackBar extends StatelessWidget {
-  const AppSnackBar(
-      {Key? key, required this.message, required this.snackBarState})
-      : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SnackBar(
-        content: Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Text(message,
-            style: AppTextStyle.poppinW500.copyWith(color: AppColors.grey)),
-        snackBarState.icon
-      ],
-    ));
-  }
-}*/
